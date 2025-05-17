@@ -131,8 +131,9 @@ GameObject:
   - component: {fileID: 609526758}
   - component: {fileID: 609526757}
   - component: {fileID: 609526756}
+  - component: {fileID: 609526760}
   m_Layer: 0
-  m_Name: Car 3
+  m_Name: Normal Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -220,13 +221,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 609526755}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 21.9, y: 5, z: -36.6}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &609526760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 609526755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e54eb0971f8229408e9120b3f318410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayerControlled: 0
 --- !u!1 &864159061
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,6 +270,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 818a02f6f246a9345a32286bc22342fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  vehicles:
+  - {fileID: 1475640482}
+  - {fileID: 1260651435}
+  - {fileID: 609526760}
 --- !u!4 &864159063
 Transform:
   m_ObjectHideFlags: 0
@@ -404,8 +422,9 @@ GameObject:
   - component: {fileID: 1260651433}
   - component: {fileID: 1260651432}
   - component: {fileID: 1260651431}
+  - component: {fileID: 1260651435}
   m_Layer: 0
-  m_Name: Car 2
+  m_Name: Bus
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -493,13 +512,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1260651430}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -24.4, y: 4.99, z: -10.95}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1260651435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260651430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10ec8a38e86eb08449b11de704f4c8ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayerControlled: 0
 --- !u!1 &1475640477
 GameObject:
   m_ObjectHideFlags: 0
@@ -512,8 +544,9 @@ GameObject:
   - component: {fileID: 1475640480}
   - component: {fileID: 1475640479}
   - component: {fileID: 1475640478}
+  - component: {fileID: 1475640482}
   m_Layer: 0
-  m_Name: Car 1
+  m_Name: Sports Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -601,13 +634,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1475640477}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 22.5, y: 5.12, z: 13.31}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &1475640482
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1475640477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25556231bb066064087c7a38cd1e0967, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayerControlled: 0
 --- !u!1 &1954509723
 GameObject:
   m_ObjectHideFlags: 0
@@ -803,13 +849,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115618113}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15385333, y: -0, z: -0, w: 0.98809373}
-  m_LocalPosition: {x: 0, y: 19.4, z: -68.6}
+  m_LocalRotation: {x: 0.10879321, y: 0.6986874, z: -0.10879321, w: 0.6986874}
+  m_LocalPosition: {x: -57.7, y: 19.4, z: -9.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 17.701, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 17.701, y: 90, z: 0}
 --- !u!114 &2115618117
 MonoBehaviour:
   m_ObjectHideFlags: 0
